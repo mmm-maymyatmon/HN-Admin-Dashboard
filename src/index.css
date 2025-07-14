@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -52,23 +54,19 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  /* color: #646cff; */
   text-decoration: inherit;
 }
-a:hover {
+/* a:hover {
   color: #535bf2;
-}
+} */
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 12px;
   line-height: 1.1;
 }
 
@@ -97,7 +95,7 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #376e6b;
   }
   button {
     background-color: #f9f9f9;
@@ -143,7 +141,7 @@ button:focus-visible {
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
+  --background: #1e293b;
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -183,4 +181,9 @@ button:focus-visible {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+a.active {
+  color : #376e6b;
+  background-color: #dee3fa;
 }
